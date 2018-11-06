@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
+
+html, body{
+	font-family: 'Droid Serif', serif;
+}
+
+header#top{
+	height:88px;
+}
+
+.redes_sociales{
+	position:absolute;
+	top:30px;
+	right:30px;
+}
+
+
+
+a.iconsRS{
+	display:inline-block;
+	width: 40px;
+	height: 27px;
+	border-left: 1px solid #e5e0db;
+	text-decoration:none;	
+}
+
+a.iconsRS i{
+	display:block;
+	width: 40px;
+	height: 27px;	
+	font-size:17px;
+	text-align: center;
+	line-height: 27px;	
+}
+
+
+.fa-facebook, .fa-twitter, .fa-google-plus, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-rss{
+	color: #448f9a;	
+}
+
+.fa-facebook:hover{
+	color: #3b5998;	
+}
+
+.fa-twitter:hover{
+	color: #00aced;
+}
+
+.fa-google-plus:hover{
+	color:#ff0000;
+}
+
+.fa-youtube:hover{
+	color:#D43B25;
+}
+
+.fa-instagram:hover{
+	color:#000;
+}
+
+.fa-pinterest:hover{
+	color:#bd081c;
+}
+
+
+.fa-rss:hover{
+	color:#ff7100;
+}
+
+
+.container{
+	background:url(../images/bg_landing.png) repeat-x;
+	display:block;
+	position:relative;
+	min-height:450px;
+}
+
+.content{
+	width:1100px;
+	margin:0 auto;
+	display:block;
+	position:relative;
+ }
+
+
+
+.bg_nieve{
+	background:url(../images/nieve_bg.png) no-repeat bottom center;
+	position:absolute;
+	width:100%;
+	top:181px;
+	z-index:2;
+	height:108px;
+}
+.arbol{
+	width:262px;
+	height:289px;
+	background:url(../images/arbol.png) no-repeat;
+	position:absolute;
+	z-index:1;
+	top:0;
+	left:50px;
+}
+
+.libro{
+	background:url(../images/libro.png) no-repeat;
+	width:375px;
+	height:490px;
+	position:absolute;
+	z-index:3;
+	top:0;
+	left: 150px;
+}
+
+
+.right{
+	position:absolute;
+	width:700px;
+	right:0;
+	height:auto;
+	top:20px;
+	z-index:3;
+}
+
+
+.right h1{
+	font-size:35px;
+	line-height:45px;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+
+}
+
+.right h2{
+	color:#164136;
+	font-size:30px;	
+	text-align:center;
+}
+
+
+.right h3{
+	color:#000;
+	font-size:16px;	
+	text-align:center;
+	margin-top:35px;
+	font-weight:100;
+}
+
+.right h3 a{
+	color:red;
+	text-decoration:none;
+}
+
+.right h3 a:hover{
+	text-decoration:underline;
+}
+
+
+.buttons{
+	width:350px;
+	margin:0 auto;
+	font-style:italic;
+	font-size:12px;
+}
+
+.box{
+	display:inline-block;
+}
+
+a.download{
+	background:url(../images/bot_download.gif) no-repeat;
+	width:153px;
+	height:55px;
+	text-align:center;
+	color:white;
+	font-size:22px;
+	line-height:55px;
+	display:block;
+	text-decoration:none;
+	font-weight:bold;
+	font-style:normal;
+}
+
+.msj{
+	font-size:10px;
+	border-top:1px solid #e9e3e1;
+	border-bottom:1px solid #e9e3e1;
+	padding:15px 0;
+	display:block;
+	color:#737373;
+	margin-top:15px;
+	text-align:center;
+}
+
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
+@media screen and (max-width:1100px){
+.content{
+	width:100%;
+ }
+ .arbol{
+	left:0px;
+}
+
+.libro{	
+	left: 70px;
+}
+
+.right{
+	width:60%;
+} 
+ 
+}
+
+
+@media screen and (max-width:800px){
+
+.libro{
+	left:50%;
+	margin-left:-200px;
+}
+
+.right{
+	width:50%;
+}
+
+.right h1{
+	font-size:30px;
+	line-height:40px;
+}
+
+ 
+}
+
+
+@media screen and (max-width:799px){
+
+.right, .bgs{
+	position:relative;
+	display:block;
+	width:100%
+}
+
+
+ .arbol{
+	left:-40px;
+}
+
+.bgs{
+	height:400px;
+}
+
+
+.right h1{
+	color:#164136;
+}
+
+.right h2{
+	color:#06ABB6;
+}
+
+
+
+.right h3{
+	font-size:12px;
+}
+
+.right{
+	margin-bottom:50px;
+}
+
+.redes_sociales {  
+    top: 30px;
+    right: 10px;
+}
+
+.buttons {
+    width: 340px;
+}
+
+.lema{
+	display:none;
+}
+
+
+}
